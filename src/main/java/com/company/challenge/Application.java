@@ -20,7 +20,7 @@ public class Application implements CommandLineRunner{
 	@Autowired
 	private MyService service1;
 
-	private static final Logger log = LoggerFactory.getLogger(Application.class);
+	private final Logger log = LoggerFactory.getLogger(getClass());
 
 	public static void main(String args[]) {
 		SpringApplication.run(Application.class);

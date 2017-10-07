@@ -14,5 +14,5 @@ import com.company.challenge.Application;
 @ContextConfiguration(classes=TestConfig.class)
 public class AbstractServiceTest {
 
-	protected static final Logger log = LoggerFactory.getLogger(AbstractServiceTest.class);
+	protected final Logger log = LoggerFactory.getLogger(getClass());
 }

@@ -13,7 +13,7 @@ import com.company.challenge.dao.Dao;
 
 @Service
 public class MyServiceImpl implements MyService{
-	private static final Logger log = LoggerFactory.getLogger(MyServiceImpl.class);
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	
 	@Value("${application.id}")
 	private int appId;

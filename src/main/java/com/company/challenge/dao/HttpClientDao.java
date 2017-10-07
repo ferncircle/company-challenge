@@ -31,7 +31,7 @@ import com.google.gson.JsonSyntaxException;
 @Service("httpClientDao")
 public class HttpClientDao implements Dao{
 
-	private static final Logger log = LoggerFactory.getLogger(HttpClientDao.class);
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	
 
 	private CloseableHttpClient client;

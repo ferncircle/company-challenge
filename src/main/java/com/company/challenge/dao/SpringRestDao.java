@@ -18,7 +18,7 @@ import com.company.challenge.bean.Bean;
 @Service("springRestDao")
 public class SpringRestDao implements Dao{
 
-	private static final Logger log = LoggerFactory.getLogger(SpringRestDao.class);
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	
 
 	@Autowired
