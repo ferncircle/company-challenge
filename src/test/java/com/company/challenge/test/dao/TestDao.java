@@ -1,19 +1,21 @@
-package com.company.challenge1.test.dao;
+package com.company.challenge.test.dao;
 
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.company.challenge1.bean.Bean;
-import com.company.challenge1.dao.Dao1;
-import com.company.challenge1.test.AbstractServiceTest;
+import com.company.challenge.bean.Bean;
+import com.company.challenge.dao.Dao;
+import com.company.challenge.test.AbstractServiceTest;
 
 
-public class TestDao1 extends AbstractServiceTest{
+public class TestDao extends AbstractServiceTest{
 
 	@Autowired
-	private Dao1 dao;
+	@Qualifier("springRestDao")
+	private Dao dao;
 	
 	
 	@Test

@@ -1,4 +1,4 @@
-package com.company.challenge1.bean;
+package com.company.challenge.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,4 +1,4 @@
-package com.company.challenge1.test;
+package com.company.challenge.test;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

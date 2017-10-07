@@ -1,4 +1,4 @@
-package com.company.challenge1;
+package com.company.challenge;
 
 import java.util.Scanner;
 
@@ -12,13 +12,13 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-import com.company.challenge1.service.Service1;
+import com.company.challenge.service.MyService;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner{
 
 	@Autowired
-	private Service1 service1;
+	private MyService service1;
 
 	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
