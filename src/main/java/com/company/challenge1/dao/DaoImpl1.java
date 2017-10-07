@@ -14,7 +14,6 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.company.challenge1.bean.Bean;
-import com.company.challenge1.service.Service1Impl;
 
 @Service
 public class DaoImpl1 implements Dao1{
