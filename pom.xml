@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.company</groupId>
-	<artifactId>company-challenge1</artifactId>
+	<artifactId>company-challenge</artifactId>
 	<version>0.1.0</version>
 
 	<parent>
