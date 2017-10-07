@@ -1,9 +1,5 @@
 package com.company.challenge.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.google.gson.annotations.SerializedName;
-
-
 public class Bean {
 		
 	private String gameId;

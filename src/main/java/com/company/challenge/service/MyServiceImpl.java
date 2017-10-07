@@ -2,8 +2,7 @@ package com.company.challenge.service;
 
 import javax.annotation.PostConstruct;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,7 +12,7 @@ import com.company.challenge.dao.Dao;
 
 @Service
 public class MyServiceImpl implements MyService{
-	private final Logger log = LoggerFactory.getLogger(getClass());
+	public Logger log = Logger.getLogger(this.getClass());  
 	
 	@Value("${application.id}")
 	private int appId;

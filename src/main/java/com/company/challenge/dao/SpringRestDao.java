@@ -1,7 +1,6 @@
 package com.company.challenge.dao;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
@@ -18,8 +17,7 @@ import com.company.challenge.bean.Bean;
 @Service("springRestDao")
 public class SpringRestDao implements Dao{
 
-	private final Logger log = LoggerFactory.getLogger(getClass());
-	
+	public Logger log = Logger.getLogger(this.getClass());  
 
 	@Autowired
 	private RestTemplate restTemplate;
